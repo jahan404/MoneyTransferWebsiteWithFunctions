@@ -17,9 +17,14 @@ document.getElementById('cash-out-button').addEventListener('click',function(eve
        
        document.getElementById('available-balance').innerText = spentMoney;
 
-       //transaction part
-       const log = document.createElement('p');
-       log.innerText = `Cash Out Amount: $${Amount} & New Balance : $${spentMoney}`
+       //transaction part using dynamic dom
+       const log = document.createElement('div');
+       log.classList.add('bg-yellow-100')
+
+       log.innerHTML = `
+       <h1 class="font-bold">Cash Out</h1>
+       <p>Cash Out Amount: $${Amount} & New Balance : $${spentMoney}</p>    
+       `
 
        document.getElementById('history').appendChild(log)
    }

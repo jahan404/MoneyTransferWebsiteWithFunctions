@@ -17,9 +17,22 @@ document.getElementById('add-money-button').addEventListener('click',function(ev
         
         document.getElementById('available-balance').innerText=adding;
 
+
+
+
+
         //transaction
+
+
         const log = document.createElement('p');
-        log.innerText =`added: $${Amount} & new balance: $${adding}`
+        // log.innerText =`
+        // Added: $${Amount} & New Balance: $${adding}
+        // `
+        log.classList.add('bg-sky-200')
+        log.innerHTML =`
+        <h1 class="font-bold">Money Added</h1>
+       <p>Added: $${Amount} & New Balance: $${adding}</p> 
+        `
 
 
         document.getElementById('history').appendChild(log)
