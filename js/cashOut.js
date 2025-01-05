@@ -16,6 +16,12 @@ document.getElementById('cash-out-button').addEventListener('click',function(eve
 
        
        document.getElementById('available-balance').innerText = spentMoney;
+
+       //transaction part
+       const log = document.createElement('p');
+       log.innerText = `Cash Out Amount: $${Amount} & New Balance : $${spentMoney}`
+
+       document.getElementById('history').appendChild(log)
    }
 
    else{

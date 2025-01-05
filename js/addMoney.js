@@ -16,6 +16,13 @@ document.getElementById('add-money-button').addEventListener('click',function(ev
 
         
         document.getElementById('available-balance').innerText=adding;
+
+        //transaction
+        const log = document.createElement('p');
+        log.innerText =`added: $${Amount} & new balance: $${adding}`
+
+
+        document.getElementById('history').appendChild(log)
     }
 
     else{

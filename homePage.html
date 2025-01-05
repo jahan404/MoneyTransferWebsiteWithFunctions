@@ -68,13 +68,13 @@
                         <label class="label">
                           <span class="label-text">Amount</span>
                         </label>
-                        <input id="cash-out-amount" type="text" placeholder="Enter Cash Out Amount" class="input input-bordered" required />
+                        <input id="cash-out-amount" type="text" placeholder="Enter Cash Out Amount" class="input input-bordered" autocomplete="off" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Password</span>
                         </label>
-                        <input id="cash-out-pass" type="password" placeholder="pin" class="input input-bordered" required />
+                        <input id="cash-out-pass" type="password" placeholder="pin" class="input input-bordered" required autocomplete="off" />
                         
                       </div>
                       <div class="form-control mt-6">
@@ -83,6 +83,16 @@
                     </form>
                   </div>
                   <!-- cash out form ends -->
+
+
+                  <!-- transaction starts here -->
+                  <div id="transaction-history" class="hidden mx-3">
+                      <h1 class="text-3xl text-blue-800 font-bold text-center py-3">Transaction History</h1>
+                      <div id="history" class="text-left">
+
+                      </div>
+                  </div>
+                  <!-- transaction ends here -->
 
               </div>
             </div>
